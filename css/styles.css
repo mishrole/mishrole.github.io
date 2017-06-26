@@ -1,0 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+	background-color: rgba(0, 0, 0, 0.05);
+	box-shadow: none;
+}
+
+.bg-home{
+	background-image: url('../img/bg.jpg');
+	width: 100%;
+	background-size: cover;
+	height: 100vh;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+.raleway{
+	font-family: 'Raleway', sans-serif;
+}
+
+.presentation{
+	margin-top: 15vw;
+}
+
+.bolder{
+	font-weight: bolder;
+}
+
+nav .nav-wrapper{
+	margin: 0 40px;
+}
+
+ul:not(.browser-default) li{
+	margin: 0 30px;
+}
+
+.logo{
+	width: 40px;
+}
