@@ -9,7 +9,7 @@ body{
 }
 
 nav{
-	background-color: rgba(0, 0, 0, 0.05);
+	background-color: transparent;
 	box-shadow: none;
 }
 
@@ -42,7 +42,7 @@ nav{
 }
 
 nav .nav-wrapper{
-	margin: 0 40px;
+	margin: 0 4vw;
 }
 
 ul:not(.browser-default) li{
@@ -50,5 +50,23 @@ ul:not(.browser-default) li{
 }
 
 .logo{
-	width: 40px;
+	width: 30px;
+}
+
+.menu{
+	display: flex;
+	flex-direction: column;
+}
+
+nav i.material-icons{
+	font-size: 35px;
+}
+
+.menu-hamburger{
+	border: none;
+	background: none;
+}
+
+button:focus{
+	background: none;
 }
