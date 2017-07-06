@@ -16,13 +16,15 @@ $(document).ready(function() {
 
 	$('.hamburguer-container, .menu-lnk').on('click', function() {
 		//$('.menu-content').fadeToggle('slow');
+
+
 		$('.hamburguer-container').toggleClass('open');
 
-		if(menu.css('right') == '-100px'){
-			menu.animate({right: '28px'});
+		if(menu.css('right') == '-500px'){
+			menu.animate({right: '30vw'});
 			$('.menu-content').fadeIn();
 		}else{
-			menu.animate({right: '-100px'});
+			menu.animate({right: '-500px'});
 			$('.menu-content').fadeOut();
 		}
 	});
@@ -36,12 +38,14 @@ $(document).ready(function() {
 		const scrollPos = $(document).scrollTop();
 
 		if(scrollPos >= home && scrollPos < about) {
-			$('.nav-fixed').css('background-color', 'transparent')
+			//$('.nav-fixed').css('background-color', 'transparent')
+			$('.nav-fixed').css('display', 'none')
 			$('.hamburguer-container span').css('background', 'white');
 			$('.menu-lnk').css('color', 'white');
 			$('.logo-container').css('filter','invert(0)');
 		}else if(scrollPos >= (about) && scrollPos < projects) {
 			//$('.nav-fixed').css('background-color', '#212121');
+			$('.nav-fixed').css('display', 'block')
 			$('.nav-fixed').css('background-color', 'white');
 			$('.logo-container').css('filter','invert(100%)');
 			$('.menu-lnk').css('color', '#333333');

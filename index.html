@@ -14,26 +14,28 @@
 <body>
 
 	<section id="home">
-		<div class="nav-fixed">
+
+		<div class="nav-fixed hide-on-med-and-down">
+			<div class="menu-fixed">
+				<div class="menu-content">
+					<ul class="menu-list">
+						<li><a class="scroll menu-lnk" href="#home">Inicio</a></li>
+						<li><a class="scroll menu-lnk" href="#about">Perfil</a></li>
+						<li><a class="scroll menu-lnk" href="#projects">Proyectos</a></li>
+						<li><a class="scroll menu-lnk" href="#contact">Contacto</a></li>
+					</ul>
+				</div>
+			</div>
+
 			<div class="menu-home">
 				<div class="logo-container">
-					<a href=" "><img src="img/logo.png" alt="MR logo" class="logo"></a>
+					<a href="#home" class="scroll"><img src="img/logo.png" alt="MR logo" class="logo"></a>
 				</div>
 				<div class="hamburguer-container">
 					<span></span>
 					<span></span>
 					<span></span>
 				</div>
-			</div>
-		</div>
-		<div class="menu-fixed">
-			<div class="menu-content">
-				<ul class="menu-list">
-					<li><a class="scroll menu-lnk" href="#home">Home</a></li>
-					<li><a class="scroll menu-lnk" href="#about">About</a></li>
-					<li><a class="scroll menu-lnk" href="#projects">Projects</a></li>
-					<li><a class="scroll menu-lnk" href="#contact">Contact</a></li>
-				</ul>
 			</div>
 		</div>
 
@@ -44,7 +46,8 @@
 						<p>Mitchell Rodríguez</p>
 					</div>
 					<div class="title">
-						<p><span class="code">< </span>Activista & Desarrollador Web<span class="code"> ></span></p>
+						<p class="hide-on-med-and-down large"><span class="code">< </span>Activista & Desarrollador Web<span class="code"> ></span></p>
+						<p class="hide-on-large-only"><span class="code">< </span>Activista & Desarrollador Web<span class="code"> ></span></p>
 					</div>
 				</div>
 			</div>
@@ -62,7 +65,7 @@
 	<section id="about">
 		<div class="about-content">
 			<div class="row about-info">
-				<div class="col s12 l5 info">
+				<div class="col s12 l4 info">
 					<!--<div class="profile-image">
 					</div>-->
 					<p>Este es un texto de prueba.</p><br>
@@ -77,7 +80,7 @@
 					<p><i>El eco de las pisadas duras, la puerta abriéndose; miedo.</i></p>
 					<p></p>
 				</div>
-				<div class="col s8 l7 skills">
+				<div class="col s8 l8 skills">
 					<div class="col s12 l12">
 
 						<p>Este es un fragmento</p><br>
@@ -116,6 +119,10 @@
 				</div>
 			</div>
 		</div>
+	</section>
+
+	<section id="contact">
+		
 	</section>
 
 	<script src="js/vendor/jquery.js"></script>

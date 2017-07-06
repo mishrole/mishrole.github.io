@@ -1,53 +1,60 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-body{
+body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-a{
+a {
 	color: white;
 }
 
-img.logo{
+img.logo {
 	width: 35px;
 }
 
-#home{
+#home {
 	background: url('../img/bg-1.jpg');
 	background-size: cover;
 }
 
 #home,
 #about,
-#projects{
+#projects,
+#contact {
 	height: 100vh;
 }
 
-.home-content{
+.home-content {
 	position: relative;
 	text-align: center;
 	color: white;
 	top: 35vh;
 }
 
-.nav-fixed{
+nav {
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.nav-fixed {
 	position: fixed;
 	overflow: hidden;
 	width: 100%;
 	top: 0;
 	z-index: 100;
+	display: none;
 }
 
-.menu-fixed{
+.menu-fixed {
 	position: fixed;
 	text-align: center;
 }
 
-.menu-home{
+.menu-home {
 	width: 90%;
 	margin: 0 auto;
 	height: 10vh;
@@ -60,7 +67,7 @@ img.logo{
 	transition: background-color 200ms linear;
 }
 
-.menu-content{
+.menu-content {
 	text-align: right;
 	width: 96vw;
 }
@@ -69,19 +76,24 @@ img.logo{
 	margin: 20px 0;
 }
 
-.menu-list{
+.menu-list {
 	position: absolute;
-	right: -100px;
-	top: 12vh;
+	right: -500px;
+	top: 3vh;
+	display: flex;
 }
 
-a.scroll:hover{
+.menu-list > li {
+	padding: 0 30px;
+}
+
+a.scroll:hover {
 	text-decoration: underline;
 }
 
 /* Menu (Large) */
 
-.hamburguer-container{
+.hamburguer-container {
 	margin-left: auto;
 	width: 25px;
 	height: 35px;
@@ -97,7 +109,7 @@ a.scroll:hover{
 	cursor: pointer;
 }
 
-.hamburguer-container span{
+.hamburguer-container span {
 	display: block;
 	position: absolute;
 	height: 2px;
@@ -165,27 +177,27 @@ a.scroll:hover{
 
 /* End of Menu (Large) */
 
-.name{
+.name {
 	font-size: 3em;
 }
 
-.title{
+.title {
 	font-size: 1.3em;
 	font-family: 'Raleway', sans-serif;
 }
 
-.code{
+.code {
 	color: #f9a91a;
 }
 
 div.name>p,
-div.title>p{
+div.title>p {
 	letter-spacing: 1px;
 }
 
 /* Typing effect (Large) */
 
-.title p {
+.title p.large {
   color: #fff;
   overflow: hidden; 
   white-space: nowrap; 
@@ -195,8 +207,8 @@ div.title>p{
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from  { width: 0 }
+  to  { width: 100% }
 }
 
 /* End of Typing effect (Large) */
@@ -265,19 +277,19 @@ div.title>p{
 }
 
 @keyframes mouse-scroll {
-	0% {
+	0%  {
 	opacity: 1;
 	top: 29%;
 	}
-	15% {
+	15%  {
 	opacity: 1;
 	top: 50%;
 	}
-	50% {
+	50%  {
 	opacity: 0;
 	top: 50%;
 	}
-	100% {
+	100%  {
 	opacity: 0;
 	top: 29%;
 	}
@@ -286,13 +298,13 @@ div.title>p{
 /* End of Scroll Effect (Large) */
 
 .about-content,
-.projects-content{
-	width: 90%;
+.projects-content {
+	width: 85%;
 	margin: 0 auto;
 	padding: 100px 0;
 }
 
-.profile-image{
+.profile-image {
 	border-radius: 50%;
 	border: 1px solid transparent;
 	padding: 5px;
@@ -303,19 +315,20 @@ div.title>p{
 }
 
 .about-info,
-.projects-info{
+.projects-info {
 	margin: 30px 0;
 }
 
-.info{
+.info {
 	border-right: 1px solid #333;
 }
 
-.projects-content{
-	width: 90%;
-	margin: 0 auto;
+.img-project {
+	width: 27.5vw;
 }
 
-.img-project{
-	width: 27.5vw;
+@media only screen and (max-width: 992px) {
+	.info {
+		border-right: none;
+	}
 }
