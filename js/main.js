@@ -20,11 +20,11 @@ $(document).ready(function() {
 
 		$('.hamburguer-container').toggleClass('open');
 
-		if(menu.css('right') == '-500px'){
-			menu.animate({right: '30vw'});
+		if(menu.css('right') == '-250px'){
+			menu.animate({right: '50%'});
 			$('.menu-content').fadeIn();
 		}else{
-			menu.animate({right: '-500px'});
+			menu.animate({right: '-250px'});
 			$('.menu-content').fadeOut();
 		}
 	});
