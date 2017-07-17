@@ -19,6 +19,13 @@ img.logo {
 #home {
 	background: url('../img/bg-1.jpg');
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
 }
 
 #home,
@@ -81,15 +88,11 @@ nav {
 	right: -250px;
 	top: 3vh;
 	display: flex;
-	transform: translateX(54.5%);
+	transform: translateX(57%);
 }
 
 .menu-list > li {
 	padding: 0 30px;
-}
-
-a.scroll:hover {
-	text-decoration: line-through;
 }
 
 /* Menu (Large) */
@@ -187,7 +190,8 @@ a.scroll:hover {
 	font-family: 'Raleway', sans-serif;
 }
 
-.code {
+.code,
+.lab:hover {
 	color: #f9a91a;
 }
 
@@ -252,7 +256,7 @@ div.title>p {
 .scroll-container .mouse {
 	position: relative;
 	display: block;
-	width: 35px;
+	width: 30px;
 	height: 55px;
 	margin: 0 auto 20px;
 	-webkit-box-sizing: border-box;
@@ -303,17 +307,46 @@ div.title>p {
 	width: 85%;
 	margin: 0 auto;
 	position: relative;
-	top: 20vh;
+	top: 15vh;
 }
 
-.profile{
-	width: 160px;
-	border-radius: 50%;
+.about-img {
+	width: 225px;
+	height: 220px;
 	margin-bottom: 10px;
+	border-radius: 50%;
+	filter: grayscale(1);
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+	opacity: 1;
+
 }
 
-.profile-container{
+.about-img:hover {
+	filter: grayscale(0);
+}
+
+.profile-container,
+.profile-cards {
 	text-align: center;
+}
+
+.profile-container {
+	margin-bottom: 3em;
+}
+
+i.icon-skills {
+	font-size: 3em;
+	margin: 0.2em;
+}
+
+a.scroll.menu-lnk {
+	-webkit-transition: .7s ease-in-out;
+	transition: .7s ease-in-out;
+}
+
+a.scroll.menu-lnk:hover {
+	color: #333 !important;
 }
 
 /*
@@ -335,6 +368,97 @@ div.title>p {
 
 .img-project {
 	width: 27.5vw;
+}
+
+.profile-info {
+	margin-bottom: 1em;
+}
+
+.profile-title {
+	font-size: 1.4em;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 1px;
+}
+
+.lab {
+	color: #333;
+	-webkit-transition: .7s ease-in-out;
+	transition: .7s ease-in-out;
+}
+
+.btn-stylus:after,
+.btn-stylus:before {
+	backface-visibility: hidden;
+	border: 1px solid rgba(255, 255, 255, 0);
+	bottom: 0px;
+	content: " ";
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	transition: all 280ms ease-in-out;
+	width: 0;
+}
+
+.btn-stylus:hover:after,
+.btn-stylus:hover:before {
+	backface-visibility: hidden;
+	border-color: #272727;
+	transition: width 350ms ease-in-out;
+	width: 100%;
+}
+
+.btn-stylus:hover:before {
+	bottom: auto;
+	top: 0;
+	width: 100%;
+}
+
+.bounce1 {
+	animation: bounce linear 0.8s;
+	animation-iteration-count: 1;
+	transform-origin: 50% 50%;
+}
+
+.bounce2 {
+	animation: bounce linear 0.8s;
+	animation-iteration-count: 1;
+	transform-origin: 50% 50%;
+}
+
+.bounce3 {
+	animation: bounce linear 0.8s;
+	animation-iteration-count: 1;
+	transform-origin: 50% 50%;
+}
+
+.bounce-card {
+/*	animation: bounce linear 0.8s;*/
+	animation-iteration-count: 1;
+	transform-origin: 50% 50%;
+}
+
+@keyframes bounce{
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  15% {
+    transform:  translate(0px,-25px)  ;
+  }
+  30% {
+    transform:  translate(0px,0px)  ;
+  }
+  45% {
+    transform:  translate(0px,-15px)  ;
+  }
+  60% {
+    transform:  translate(0px,0px)  ;
+  }
+  75% {
+    transform:  translate(0px,-5px)  ;
+  }
+  100% {
+    transform:  translate(0px,0px)  ;
+  }
 }
 
 @media only screen and (max-width: 992px) {

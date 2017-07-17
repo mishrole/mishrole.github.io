@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	// Scroll Effect (Large)
+	// Scroll Effect
 
 	$('.scroll').on('click', function(e) {
 		e.preventDefault();
@@ -11,12 +11,11 @@ $(document).ready(function() {
 
 	const home = $('#home').offset().top;
 	const projects = $('#projects').offset().top;
-	const about = $('#about').offset().top - 40;
+	const about = $('#about').offset().top - 25;
 	const menu = $('.menu-list');
 
 	$('.hamburguer-container, .menu-lnk').on('click', function() {
 		//$('.menu-content').fadeToggle('slow');
-
 
 		$('.hamburguer-container').toggleClass('open');
 
@@ -48,10 +47,44 @@ $(document).ready(function() {
 			$('.nav-fixed').css('display', 'block')
 			$('.nav-fixed').css('background-color', 'white');
 			$('.logo-container').css('filter','invert(100%)');
-			$('.menu-lnk').css('color', '#333333');
+			$('.menu-lnk').css('color', '#c4c4c4');
 			$('.hamburguer-container span').css('background', '#333333');
+			$('.about').css('color', '#333');
+
+			let time = 0;
+			let count = 1;
+
+			$('.appear').each(function() {
+			    $(this).delay(time).fadeIn(1000);
+			    time += 1500;
+			});
+
+			$('.cards').each(function() {
+				console.log(count)
+				$(this).delay(time).addClass('bounce'+count);
+				count += 1;
+				// $(this).delay(time).css('animation', 'bounce linear 0.8s');
+				time += 1500;
+			})
+
 		}else if(scrollPos >= projects) {
 			//$('.nav-fixed').css('background-color', '#333');
 		}
 	});
+
+
+
+	// FadeIn elements (one after another)
+
+
+/*	var time = 0;
+	$('.appear').each(function() {
+	    $(this).delay(time).fadeIn(1000);
+	    time += 1000;
+	});
+*/
+
+/*	$('.about-img').hover(function() {
+		$(this).toggleClass('filter');
+	})*/
 });
