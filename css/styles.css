@@ -302,12 +302,23 @@ div.title>p {
 
 /* End of Scroll Effect (Large) */
 
+#about {
+	background-color: white;
+}
+
 .about-content,
 .projects-content {
 	width: 85%;
 	margin: 0 auto;
 	position: relative;
+}
+
+.about-content {
 	top: 15vh;
+}
+
+.projects-content {
+	top: 20vh;
 }
 
 .about-img {
@@ -326,13 +337,9 @@ div.title>p {
 	filter: grayscale(0);
 }
 
-.profile-container,
-.profile-cards {
-	text-align: center;
-}
-
 .profile-container {
-	margin-bottom: 3em;
+	margin-bottom: 10vh;
+	text-align: center;
 }
 
 i.icon-skills {
@@ -363,11 +370,11 @@ a.scroll.menu-lnk:hover {
 
 .about-info,
 .projects-info {
-	margin: 30px 0;
+	margin: 20px 0;
 }
 
 .img-project {
-	width: 27.5vw;
+	width: 19vw;
 }
 
 .profile-info {
@@ -375,15 +382,31 @@ a.scroll.menu-lnk:hover {
 }
 
 .profile-title {
-	font-size: 1.4em;
+	font-size: calc(100% + 0.3vw);
 	font-family: 'Raleway', sans-serif;
-	letter-spacing: 1px;
+	letter-spacing: 0.5px;
+}
+
+.profile-text {
+	margin-bottom: 3.5vh;
+}
+
+.show-s {
+	display: none;
 }
 
 .lab {
 	color: #333;
 	-webkit-transition: .7s ease-in-out;
 	transition: .7s ease-in-out;
+}
+
+#projects {
+	background-color: #9d9d9d;
+}
+
+.appear {
+	display: none;
 }
 
 .btn-stylus:after,
@@ -461,11 +484,35 @@ a.scroll.menu-lnk:hover {
   }
 }
 
-@media only screen and (max-width: 992px) {
-	.info {
-		border-right: none;
+@media only screen and (max-width: 340px) and (min-width: 310px) {
+	.hidden-s {
+		display: none;
 	}
 
+	.show-s {
+		display: block;
+	}
+
+	i.icon-skills {
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 500px) and (min-width: 341px) {
+	.hidden-s {
+		display: none;
+	}
+
+	.show-s {
+		display: block;
+	}
+
+	i.icon-skills {
+		margin: 0.1em;
+	}
+}
+
+@media only screen and (max-width: 992px) {
 	.about-content,
 	.projects-content {
 		top: 5vh;

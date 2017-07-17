@@ -10,7 +10,7 @@ $(document).ready(function() {
 	// Menu Effect (Large)
 
 	const home = $('#home').offset().top;
-	const projects = $('#projects').offset().top;
+	const projects = $('#projects').offset().top - 25;
 	const about = $('#about').offset().top - 25;
 	const menu = $('.menu-list');
 
@@ -51,24 +51,27 @@ $(document).ready(function() {
 			$('.hamburguer-container span').css('background', '#333333');
 			$('.about').css('color', '#333');
 
+			// let count = 1;
+/*			$('.cards').each(function() {
+				console.log(count)
+				$(this).delay(time).addClass('bounce'+count);
+				count += 1;
+				// $(this).delay(time).css('animation', 'bounce linear 0.8s');
+				time += 1500;
+			})*/
+
+		}else if(scrollPos >= projects) {
+
+			$('.menu-lnk').css('color', '#c4c4c4');
+			$('.projects').css('color', '#333');
+			
 			let time = 0;
-			let count = 1;
 
 			$('.appear').each(function() {
 			    $(this).delay(time).fadeIn(1000);
 			    time += 1500;
 			});
 
-			$('.cards').each(function() {
-				console.log(count)
-				$(this).delay(time).addClass('bounce'+count);
-				count += 1;
-				// $(this).delay(time).css('animation', 'bounce linear 0.8s');
-				time += 1500;
-			})
-
-		}else if(scrollPos >= projects) {
-			//$('.nav-fixed').css('background-color', '#333');
 		}
 	});
 
