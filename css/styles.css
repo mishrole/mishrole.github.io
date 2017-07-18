@@ -29,10 +29,13 @@ img.logo {
 }
 
 #home,
-#about,
 #projects,
-#contact {
+#contact{
 	height: 100vh;
+}
+
+#about {
+	height: 100%;
 }
 
 .home-content {
@@ -186,15 +189,15 @@ nav {
 }
 
 .title {
-	font-size: 1.3em;
+	font-size: 1.2em;
 	font-family: 'Raleway', sans-serif;
 }
 
 .code,
-.lab:hover {
+.lab:hover,
+.lab-white:hover {
 	color: #f9a91a;
 }
-
 div.name>p,
 div.title>p {
 	letter-spacing: 1px;
@@ -321,6 +324,10 @@ div.title>p {
 	top: 20vh;
 }
 
+
+.projects-title {
+	font-size: calc(100% + 0.1vw);
+}
 .about-img {
 	width: 225px;
 	height: 220px;
@@ -401,8 +408,12 @@ a.scroll.menu-lnk:hover {
 	transition: .7s ease-in-out;
 }
 
+.skills {
+	margin: 1.4em 0;
+}
 #projects {
-	background-color: #9d9d9d;
+	background-color: #212121;
+	color: white;
 }
 
 .appear {

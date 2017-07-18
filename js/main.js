@@ -63,7 +63,11 @@ $(document).ready(function() {
 		}else if(scrollPos >= projects) {
 
 			$('.menu-lnk').css('color', '#c4c4c4');
-			$('.projects').css('color', '#333');
+			$('.projects').css('color', 'white');
+			$('.nav-fixed').css('background-color', 'transparent');
+			$('.logo-container').css('filter','invert(0)');
+			$('.hamburguer-container span').css('background', 'white');
+
 			
 			let time = 0;
 
