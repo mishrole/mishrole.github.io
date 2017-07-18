@@ -458,6 +458,10 @@ a.scroll.menu-lnk:hover {
 .uppercase {
 	text-transform: uppercase;
 }
+
+.hidden-projects {
+	display: none;
+}
 /*
 .btn,
 .btn:hover,
@@ -572,6 +576,13 @@ a.scroll.menu-lnk:hover {
 
 	i.icon-skills {
 		margin: 0.1em;
+	}
+}
+
+@media only screen and (max-width: 610px) {
+
+	.show-projects {
+		display: block;
 	}
 }
 
