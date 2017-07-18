@@ -29,11 +29,10 @@ img.logo {
 }
 
 #home,
-#projects,
 #contact{
 	height: 100vh;
 }
-
+#projects,
 #about {
 	height: 100%;
 }
@@ -320,14 +319,14 @@ div.title>p {
 	top: 15vh;
 }
 
-.projects-content {
+.project-1 {
+	height: 100vh;
+}
+
+/*.projects-content {
 	top: 20vh;
-}
+}*/
 
-
-.projects-title {
-	font-size: calc(100% + 0.1vw);
-}
 .about-img {
 	width: 225px;
 	height: 220px;
@@ -384,6 +383,10 @@ a.scroll.menu-lnk:hover {
 	width: 19vw;
 }
 
+.projects-title {
+	font-size: calc(100% + 0.1vw);
+}
+
 .profile-info {
 	margin-bottom: 1em;
 }
@@ -411,6 +414,7 @@ a.scroll.menu-lnk:hover {
 .skills {
 	margin: 1.4em 0;
 }
+
 #projects {
 	background-color: #212121;
 	color: white;
