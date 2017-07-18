@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+	 $('.carousel.carousel-slider').carousel({fullWidth: true});
+
 	// Scroll Effect
 
 	$('.scroll').on('click', function(e) {
@@ -64,10 +66,9 @@ $(document).ready(function() {
 
 			$('.menu-lnk').css('color', '#c4c4c4');
 			$('.projects').css('color', 'white');
-			$('.nav-fixed').css('background-color', 'transparent');
+			$('.nav-fixed').css('background-color', '#212121');
 			$('.logo-container').css('filter','invert(0)');
 			$('.hamburguer-container span').css('background', 'white');
-
 			
 			let time = 0;
 

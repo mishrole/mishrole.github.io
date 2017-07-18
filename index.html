@@ -75,8 +75,8 @@
 						<p class="profile-title font-xs">Autodidacta | Proactivo | Adaptable</p>
 						<p class="profile-title hidden-s">Egresado de la sexta promoción de <a class="lab" href="http://laboratoria.la/">Laboratoria</a>.</p>
 						<p class="profile-title hidden-s">Residiendo, aprendiendo y creando en Lima.</p>
-						<p class="profile-title show-s">Interesado en estudios de género y herramientas de accesibilidad.</p>
-						<p class="profile-title show-s">Egresado de <a class="lab" href="http://laboratoria.la/">Laboratoria</a>.</p>
+						<p class="profile-title show-s">Interesado en estudios de género y herramientas de accesibilidad</p>
+						<p class="profile-title show-s">Egresado de <a class="lab" href="http://laboratoria.la/">Laboratoria</a></p>
 					</div>
 
 					<div class="col s12 hide-on-med-and-up skills">
@@ -128,19 +128,78 @@
 		<div class="projects-content">
 			<div class="row projects-info">
 				<div class="col s12 hide-on-med-and-down valign-wrapper project-1">
-					<div class="col l5">
-						<img src="img/yape-mockup.png" alt="yape bcp" class="col s12">
-					</div>
-					<div class="col l6">
-						<p class="center projects-title"><span class="lab-white">Yape</span> es la nueva aplicación móvil del Banco de Crédito del Perú para realizar pagos de manera rápida, efectiva y sin costo alguno.</p>
-						<br>
-						<p class="center projects-title">El enfoque de la réplica fue enteramente mobile, y los requerimientos se basaron en la validación de los datos ingresados por los usuarios, así como el almacenamiento de los mismos.</p>
-						<br>
-						<p class="center projects-title">Al iniciar la réplica, se integró una API construida a través de NodeJS y Express para manejar los datos de los usuarios, LevelDB (level up , level down) como sistema de almacenamiento,  </p><br>
-
-						<p class="center projects-tools">Express | Body Parser | Level , level up , level down | Morgan , MorganJSON | Random Number | Materialize</p>
+					<div class="carousel carousel-slider" data-indicators="true">
+						<div class="carousel-item">
+							<div class="col l5">
+								<a href="https://yapelabproject.herokuapp.com/"><img src="img/yape-mockup.png" alt="yape bcp" class="col s12"></a>
+							</div>
+							<div class="col l6 projects-text">
+								<!-- <p class="projects-title hidden-l"><span class="lab-white">Yape</span> es la nueva aplicación móvil del Banco de Crédito del Perú para realizar pagos de manera rápida, efectiva y sin costo alguno.</p>
+								<br> -->
+								<p class="projects-title center uppercase">Proyecto Yape</p><br>
+								<p class="projects-subtitle yellow-lab center">Mobile | Validación + Almacenamiento</p>
+								<!-- <div class="hidden-l">
+									<p>API construida a través de NodeJS y Express</p>
+									<p>RandomNumber para generar series de tokens</p>
+									<p>Materialize como framework css de diseño adaptable</p>
+									<p>Heroku como plataforma de despliegue de la aplicación</p>
+									<p>BodyParser para transformar los datos en un objeto accesible</p>
+									<p>LevelDB + LevelUp + LevelDown como sistema de almacenamiento</p>
+									<p>Morgan + MorganJSON como interfaz de registro de solicitudes HTTP</p>
+								</div> -->
+								<div class="center projects-tools">
+									<p class="projects-subtitle">NodeJS | Express | RandomNumber</p>
+									<p class="projects-subtitle">BodyParser | LevelDB + LevelUp + LevelDown</p>
+									<p class="projects-subtitle">Morgan + MorganJSON | Materialize | Heroku</p>
+								</div>
+								<div class="center btn-container col m12">
+									<div class="center btn-code col s6">
+										<a href="https://github.com/mishrole" class="btn waves-effect waves-light">Revisa el código</a>
+									</div>
+									<div class="center btn-code col s6">
+										<a href="https://mishrole.github.io/" class="btn waves-effect waves-light">Prueba la app</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="col l5">
+								<a href="https://yapelabproject.herokuapp.com/"><img src="img/yape-mockup.png" alt="yape bcp" class="col s12"></a>
+							</div>
+							<div class="col l6 projects-text">
+								<p class="projects-title"><span class="lab-white">Yape</span> es la nueva aplicación móvil del Banco de Crédito del Perú para realizar pagos de manera rápida, efectiva y sin costo alguno.</p>
+								<br>
+								<p class="projects-title yellow-lab center">Mobile | Validación + Almacenamiento</p>
+								<br>
+								<p>API construida a través de NodeJS y Express</p>
+								<p>RandomNumber para generar series de tokens</p>
+								<p>Materializecomo framework css de diseño adaptable</p>
+								<p>Heroku como plataforma de despliegue de la aplicación</p>
+								<p>BodyParser para transformar los datos en un objeto accesible</p>
+								<p>LevelDB + LevelUp + LevelDown como sistema de almacenamiento</p>
+								<p>Morgan + MorganJSON como interfaz de registro de solicitudes HTTP</p>
+							</div>
+						</div>
 					</div>
 				</div>
+<!-- 				<div class="col s12 hide-on-med-and-down valign-wrapper project-1">
+					<div class="col l5">
+						<a href="https://yapelabproject.herokuapp.com/"><img src="img/yape-mockup.png" alt="yape bcp" class="col s12"></a>
+					</div>
+					<div class="col l6">
+						<p class="projects-title"><span class="lab-white">Yape</span> es la nueva aplicación móvil del Banco de Crédito del Perú para realizar pagos de manera rápida, efectiva y sin costo alguno.</p>
+						<br>
+						<p class="projects-title yellow-lab center">Mobile | Validación + Almacenamiento</p>
+						<br>
+						<p>API construida a través de NodeJS y Express</p>
+						<p>RandomNumber para generar series de tokens</p>
+						<p>Materializecomo framework css de diseño adaptable</p>
+						<p>Heroku como plataforma de despliegue de la aplicación</p>
+						<p>BodyParser para transformar los datos en un objeto accesible</p>
+						<p>LevelDB + LevelUp + LevelDown como sistema de almacenamiento</p>
+						<p>Morgan + MorganJSON como interfaz de registro de solicitudes HTTP</p>
+					</div>
+				</div> -->
 			</div>
 		</div>
 	</section>

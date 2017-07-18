@@ -29,11 +29,12 @@ img.logo {
 }
 
 #home,
-#contact{
+#contact,
+#about{
 	height: 100vh;
 }
-#projects,
-#about {
+
+#projects {
 	height: 100%;
 }
 
@@ -194,7 +195,8 @@ nav {
 
 .code,
 .lab:hover,
-.lab-white:hover {
+.lab-white:hover,
+.yellow-lab {
 	color: #f9a91a;
 }
 div.name>p,
@@ -319,9 +321,6 @@ div.title>p {
 	top: 15vh;
 }
 
-.project-1 {
-	height: 100vh;
-}
 
 /*.projects-content {
 	top: 20vh;
@@ -384,6 +383,10 @@ a.scroll.menu-lnk:hover {
 }
 
 .projects-title {
+	font-size: 1.5em !important;
+}
+
+.projects-subtitle {
 	font-size: calc(100% + 0.1vw);
 }
 
@@ -412,7 +415,7 @@ a.scroll.menu-lnk:hover {
 }
 
 .skills {
-	margin: 1.4em 0;
+	margin: 0.5em 0 1.4em 0;
 }
 
 #projects {
@@ -420,6 +423,51 @@ a.scroll.menu-lnk:hover {
 	color: white;
 }
 
+.project-1 {
+	height: 100vh;
+}
+
+.carousel {
+	height: 70vh !important;
+	margin-top: 6em;
+}
+
+.projects-text {
+	margin-top: 2em;
+}
+
+.projects-tools {
+	margin: 3vw 0;
+}
+
+.btn-code {
+	position: relative;
+}
+
+.btn {
+	background-color: #333;
+	color: white;
+}
+
+.btn:hover {
+	background-color: white;
+	color: #333;
+	font-weight: 700;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+/*
+.btn,
+.btn:hover,
+.btn:active,
+.btn:visited,
+.btn:focus {
+	background-color: transparent;
+	box-shadow: none;
+}
+*/
 .appear {
 	display: none;
 }
@@ -440,7 +488,7 @@ a.scroll.menu-lnk:hover {
 .btn-stylus:hover:after,
 .btn-stylus:hover:before {
 	backface-visibility: hidden;
-	border-color: #272727;
+	border-color: white;
 	transition: width 350ms ease-in-out;
 	width: 100%;
 }
@@ -532,7 +580,14 @@ a.scroll.menu-lnk:hover {
 	.projects-content {
 		top: 5vh;
 	}
+
+	#projects,
+	#about {
+		height: 100%;
+	}
 }
+
+
 /*
 @media only screen and (max-width: 500px) {
 	.about-content,
