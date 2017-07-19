@@ -74,14 +74,14 @@ $(document).ready(function() {
 			$('.hamburguer-container span').css('background', 'white');
 
 		}else if(scrollPos >= contact) {
-			$('.nav-fixed').css('display', 'none')
-			/*$('.nav-fixed').css('background-color', 'white');
+			$('.nav-fixed').css('display', 'block')
+			$('.nav-fixed').css('background-color', 'white');
 			$('.logo-container').css('filter','invert(100%)');
 			$('.menu-lnk').css('color', '#c4c4c4');
 			$('.hamburguer-container span').css('background', '#333333');
 			$('.contact').css('color', '#333');
 
-			let time = 0;
+/*			let time = 0;
 
 			$('.appear').each(function() {
 			    $(this).delay(time).fadeIn(1000);
@@ -91,6 +91,8 @@ $(document).ready(function() {
 	});
 
 	$('.ghost').on('click', function() {
+		$('#contact').css('display', 'block');
+		$('.contact-content').css('padding-top', '30vh');
 		$('.ghost-container').addClass('up');
 		$('.ghost-container').fadeOut(500);
 
@@ -101,8 +103,8 @@ $(document).ready(function() {
 		let time = 0;
 
 		$('.appear').each(function() {
-		    $(this).delay(time).fadeIn(1500);
-		    time += 1500;
+		    $(this).delay(time).fadeIn(1000);
+		    time += 1000;
 		});
 		// $('.social').fadeIn(1500);
 	})

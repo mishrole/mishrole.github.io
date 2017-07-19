@@ -478,6 +478,12 @@ a.scroll.menu-lnk:hover {
 	box-shadow: none;
 }
 */
+
+.vertical {
+	display: flex;
+	align-items: center;	
+}
+
 .appear {
 	display: none;
 }
@@ -487,13 +493,20 @@ a.scroll.menu-lnk:hover {
 	align-items: center;
 }
 
-.social > a {
+.social-items > a {
 	color: #2b2b2b;
 }
 
-.social-xs {
-	display: flex;
-    justify-content: space-between;
+.social-1 {
+	padding-bottom: 5vh !important;
+}
+
+.social-2 {
+	padding-top: 5vh !important;
+}
+
+.schedule {
+	padding-top: 10vh !important;
 }
 
 .icon-social {
@@ -518,7 +531,8 @@ a.scroll.menu-lnk:hover {
 	margin-bottom: 1.5em;
 }
 
-.ghost {
+.ghost,
+.you-can-book-me {
 	letter-spacing: 0.5em;
 	font-size: 1em;
 }
