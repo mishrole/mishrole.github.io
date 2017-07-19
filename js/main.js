@@ -1,6 +1,8 @@
 $(document).ready(function() {
 
-	 $('.carousel.carousel-slider').carousel({fullWidth: true});
+	// Materialize tools (Initialization)
+
+	$('.carousel.carousel-slider').carousel({fullWidth: true});
 
 	// Scroll Effect
 
@@ -14,6 +16,7 @@ $(document).ready(function() {
 	const home = $('#home').offset().top;
 	const projects = $('#projects').offset().top - 25;
 	const about = $('#about').offset().top - 25;
+	const contact = $('#contact').offset().top - 25;
 	const menu = $('.menu-list');
 
 	$('.hamburguer-container, .menu-lnk').on('click', function() {
@@ -62,25 +65,47 @@ $(document).ready(function() {
 				time += 1500;
 			})*/
 
-		}else if(scrollPos >= projects) {
+		}else if(scrollPos >= projects && scrollPos < contact) {
 
 			$('.menu-lnk').css('color', '#c4c4c4');
 			$('.projects').css('color', 'white');
 			$('.nav-fixed').css('background-color', '#212121');
 			$('.logo-container').css('filter','invert(0)');
 			$('.hamburguer-container span').css('background', 'white');
-			
+
+		}else if(scrollPos >= contact) {
+			$('.nav-fixed').css('display', 'none')
+			/*$('.nav-fixed').css('background-color', 'white');
+			$('.logo-container').css('filter','invert(100%)');
+			$('.menu-lnk').css('color', '#c4c4c4');
+			$('.hamburguer-container span').css('background', '#333333');
+			$('.contact').css('color', '#333');
+
 			let time = 0;
 
 			$('.appear').each(function() {
 			    $(this).delay(time).fadeIn(1000);
 			    time += 1500;
-			});
-
+			});*/
 		}
 	});
 
+	$('.ghost').on('click', function() {
+		$('.ghost-container').addClass('up');
+		$('.ghost-container').fadeOut(500);
 
+		// $('.social-item').each(function() {
+		// 	$(this).addClass('appear');
+		// })	
+
+		let time = 0;
+
+		$('.appear').each(function() {
+		    $(this).delay(time).fadeIn(1500);
+		    time += 1500;
+		});
+		// $('.social').fadeIn(1500);
+	})
 
 	// FadeIn elements (one after another)
 

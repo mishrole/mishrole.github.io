@@ -196,9 +196,12 @@ nav {
 .code,
 .lab:hover,
 .lab-white:hover,
-.yellow-lab {
+.yellow-lab{
 	color: #f9a91a;
+	-webkit-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
 }
+
 div.name>p,
 div.title>p {
 	letter-spacing: 1px;
@@ -311,13 +314,14 @@ div.title>p {
 }
 
 .about-content,
-.projects-content {
+.projects-content,
+.contact-content {
 	width: 85%;
 	margin: 0 auto;
 	position: relative;
 }
 
-.about-content {
+.about-content{
 	top: 15vh;
 }
 
@@ -423,7 +427,7 @@ a.scroll.menu-lnk:hover {
 	color: white;
 }
 
-.project-1 {
+.project-item {
 	height: 100vh;
 }
 
@@ -444,12 +448,14 @@ a.scroll.menu-lnk:hover {
 	position: relative;
 }
 
-.btn {
+.btn,
+.btn:focus {
 	background-color: #333;
 	color: white;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:active{
 	background-color: white;
 	color: #333;
 	font-weight: 700;
@@ -474,6 +480,59 @@ a.scroll.menu-lnk:hover {
 */
 .appear {
 	display: none;
+}
+
+#contact {
+	display: flex;
+	align-items: center;
+}
+
+.social > a {
+	color: #2b2b2b;
+}
+
+.social-xs {
+	display: flex;
+    justify-content: space-between;
+}
+
+.icon-social {
+	font-size: 4em;
+	margin: 0 1vw;
+}
+
+.icon-social-xs {
+	font-size: 1em;
+}
+
+.icon-social:hover {
+	color: #666666;
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+}
+
+.contact-title {
+	font-size: 3em;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 0.5px;
+	margin-bottom: 1.5em;
+}
+
+.ghost {
+	letter-spacing: 0.5em;
+	font-size: 1em;
+}
+
+.scale {
+	transform-origin: 50% 50%;
+	animation: scale linear 0.5s;
+	animation-fill-mode: forwards;
+}
+
+.up {
+	transform-origin: 50% 50%;
+	animation: up linear 0.5s;
+	animation-fill-mode: forwards;
 }
 
 .btn-stylus:after,
@@ -529,29 +588,59 @@ a.scroll.menu-lnk:hover {
 
 @keyframes bounce{
   0% {
-    transform:  translate(0px,0px)  ;
+    transform:  translate(0px,0px);
   }
   15% {
-    transform:  translate(0px,-25px)  ;
+    transform:  translate(0px,-25px);
   }
   30% {
-    transform:  translate(0px,0px)  ;
+    transform:  translate(0px,0px);
   }
   45% {
-    transform:  translate(0px,-15px)  ;
+    transform:  translate(0px,-15px);
   }
   60% {
-    transform:  translate(0px,0px)  ;
+    transform:  translate(0px,0px);
   }
   75% {
-    transform:  translate(0px,-5px)  ;
+    transform:  translate(0px,-5px);
   }
   100% {
-    transform:  translate(0px,0px)  ;
+    transform:  translate(0px,0px);
   }
 }
 
-@media only screen and (max-width: 340px) and (min-width: 310px) {
+@keyframes scale{
+  0% {
+    transform:  scaleX(1.00) scaleY(1.00);
+  }
+  25% {
+    transform:  scaleX(0.75) scaleY(0.75);
+  }
+  50% {
+    transform:  scaleX(0.50) scaleY(0.50);
+  }
+  75% {
+    transform:  scaleX(0.25) scaleY(0.25);
+  }
+  100% {
+    transform:  scaleX(0.00) scaleY(0.00);
+  }
+}
+
+@keyframes up{
+  0% {
+    transform:  translate(0px,0vh);
+  }
+  50% {
+    transform:  translate(0px,-15vh);
+  }
+  100% {
+    transform:  translate(0px,-30vh);
+  }
+}
+
+@media only screen and (max-width: 340px) and (min-width: 300px) {
 	.hidden-s {
 		display: none;
 	}
@@ -588,6 +677,11 @@ a.scroll.menu-lnk:hover {
 	.show-projects {
 		display: block;
 	}
+
+	.contact-title {
+		font-size: 2.3em;
+	}
+
 }
 
 @media only screen and (max-width: 992px) {
