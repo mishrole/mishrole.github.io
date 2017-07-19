@@ -563,6 +563,10 @@ a.scroll.menu-lnk:hover {
 	i.icon-skills {
 		margin: 0;
 	}
+
+	.projects-text {
+		margin: 0;
+	}
 }
 
 @media only screen and (max-width: 500px) and (min-width: 341px) {
@@ -595,6 +599,10 @@ a.scroll.menu-lnk:hover {
 	#projects,
 	#about {
 		height: 100%;
+	}
+
+	.carousel {
+		margin-top: 0;
 	}
 }
 
