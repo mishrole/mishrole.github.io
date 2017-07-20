@@ -93,7 +93,7 @@ $(document).ready(function() {
 
 	$('.ghost').on('click', function() {
 		$('#contact').css('display', 'block');
-		$('.contact-content').css('padding-top', '30vh');
+		$('.contact-content').css('padding-top', '28.5vh');
 		$('.ghost-container').addClass('up');
 		$('.ghost-container').fadeOut(500);
 
