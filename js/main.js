@@ -3,6 +3,7 @@ $(document).ready(function() {
 	// Materialize tools (Initialization)
 
 	$('.carousel.carousel-slider').carousel({fullWidth: true});
+	$('.tooltipped').tooltip({delay: 50});
 
 	// Scroll Effect
 
