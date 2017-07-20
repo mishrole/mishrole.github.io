@@ -549,6 +549,10 @@ a.scroll.menu-lnk:hover {
 	animation-fill-mode: forwards;
 }
 
+a.disabled {
+	pointer-events: none;
+}
+
 .btn-stylus:after,
 .btn-stylus:before {
 	backface-visibility: hidden;
