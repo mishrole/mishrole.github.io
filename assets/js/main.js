@@ -21,9 +21,13 @@ const menuAnimationElements = [
 menuContainer.addEventListener("click", () => {
   if (sidemenu.classList.contains("active")) {
     setTimeout(() => {
-        sidemenu.classList.remove("active");
-        document.body.style.overflow = "auto"; 
+      sidemenu.classList.remove("active");
+      document.body.style.overflow = "auto";
     }, 300);
+  } else {
+    setTimeout(() => {
+      document.body.style.overflow = "hidden";
+    }, 410);
   }
 
   hamburgerMenu.classList.toggle("animate");
@@ -32,35 +36,30 @@ menuContainer.addEventListener("click", () => {
   for (let i in menuAnimationElements) {
     menuAnimationElements[i].classList.toggle("active");
   }
-
-// TODO: Fix Bug on 300
-  setTimeout(() => {
-    document.body.style.overflow = "hidden";
-  }, 299);
 });
 
 autoscroll.forEach((element) =>
   element.addEventListener("click", (e) => {
     e.preventDefault();
-    autoScroll(e.target.hash);
+    autoScroll(e.target.getAttribute("href"));
   })
 );
 
 scrollButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    document.querySelector("#work").scrollIntoView({ behavior: 'smooth' });
-})
+  e.preventDefault();
+  document.querySelector("#work").scrollIntoView({ behavior: "smooth" });
+});
 
 const autoScroll = (scrollTo) => {
-    sidemenu.classList.remove("active");
-    hamburgerMenu.classList.toggle("animate");
-    document.body.style.overflow = "auto";
+  sidemenu.classList.remove("active");
+  hamburgerMenu.classList.toggle("animate");
+  document.body.style.overflow = "auto";
 
-    for (let i in menuAnimationElements) {
-        menuAnimationElements[i].classList.toggle("active");
-    }
+  for (let i in menuAnimationElements) {
+    menuAnimationElements[i].classList.toggle("active");
+  }
 
-    setTimeout(() => {
-        document.querySelector(scrollTo).scrollIntoView({ behavior: 'smooth' });
-    }, 500);
+  setTimeout(() => {
+    document.querySelector(scrollTo).scrollIntoView({ behavior: "smooth" });
+  }, 500);
 };
