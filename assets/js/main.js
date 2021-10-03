@@ -27,7 +27,7 @@ menuContainer.addEventListener("click", () => {
   } else {
     setTimeout(() => {
       document.body.style.overflow = "hidden";
-    }, 410);
+    }, 350);
   }
 
   hamburgerMenu.classList.toggle("animate");

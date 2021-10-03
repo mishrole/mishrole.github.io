@@ -8,6 +8,8 @@
   --reg-font: calc(1em + 0vw);
   --menu-font: calc(1em + 2.4vw);
 
+  --gap: calc(1em + 3vw);
+
   --primary-fontfamily: "Roboto", sans-serif;
   --secondary-fontfamily: "Maven Pro", sans-serif;
 }
@@ -192,6 +194,45 @@ nav {
   transition: 1s ease-in-out;
 }
 
+.selected_projects {
+    max-width: 1280px;
+    display: flex;
+    width: inherit;
+    flex-direction: column;
+    padding: 5.5rem 2rem;
+    gap: var(--gap);
+}
+
+.project__image {
+    width: fit-content;
+}
+
+.project__image > img {
+    width: 100%;
+}
+
+.project__information {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1rem 0;
+}
+
+.project__information__button {
+    padding: 1rem 0;
+    font-size: var(--menu-font);
+    text-decoration: none;
+}
+
+.project__information__title p {
+    font-size: var(--title-font);
+    font-weight: 500;
+}
+
+.project__information__title span {
+    font-size: var(--reg-font);
+}
+
 /* Hamburger Animation */
 
 .menu__hamburger,
@@ -316,7 +357,7 @@ nav {
   }
 }
 
-@media (min-height: 641px) {
+@media (min-height: 760px) {
     .scroll {
         display: flex;
         width: 100%;
